@@ -10,6 +10,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+main{
+  max-width: 1440px;
+}
+
 nav {
   background: linear-gradient(
     100deg,
@@ -124,9 +128,9 @@ section {
   .menu-close {
     position: absolute;
     display: block;
-    margin-top: -5em;
-    transform: translate(80px, 100px);
-    transform: translate(560px, -200px);
+    margin-top: 5em auto;
+    left:89%;
+    transform: translateX(100%);
     cursor: pointer;
   }
 
@@ -150,5 +154,23 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
     height: calc(100vh - 80px);
+  }
+}
+
+@media (max-width: 600px) {
+  .menu-close {
+    left:86%;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-close {
+    left:83%;
+  }
+}
+
+@media (max-width: 375px) {
+  .menu-close {
+    left:78%;
   }
 }
