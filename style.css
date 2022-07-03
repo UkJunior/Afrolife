@@ -35,6 +35,12 @@ nav ul {
   margin-right: 20px;
 }
 
+.menu-close {
+  font-size: 2em;
+  color: rgb(182, 165, 159);
+  display: none;
+}
+
 nav ul li {
   display: inline-block;
   line-height: 80px;
@@ -115,14 +121,30 @@ section {
     font-size: 20px;
   }
 
+  .menu-close {
+    position: absolute;
+    display: block;
+    margin-top: -5em;
+    transform: translate(80px, 100px);
+    transform: translate(560px, -200px);
+    cursor: pointer;
+  }
+
   a:hover,
   a.active {
     background: none;
   }
 
-  #check:checked ~ ul {
+  .show {
     left: 0;
   }
+
+  .hide {
+    left: -100%;
+  }
+  /* #check:checked ~ ul {
+    left: 0;
+  } */
   section {
     background-image: url(https://images.pexels.com/photos/12608580/pexels-photo-12608580.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
     background-repeat: no-repeat;
